@@ -84,5 +84,7 @@ public class UserRegistrationTest {
 		boolean result = regitration.passWord("Sdaddi12");
 		Assert.assertEquals(false, result);
 	}
+	
+	
 
 }

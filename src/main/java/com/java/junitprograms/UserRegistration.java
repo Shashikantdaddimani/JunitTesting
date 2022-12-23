@@ -37,5 +37,12 @@ public class UserRegistration {
 		return matcher.matches();
 	
 	}	
+	public static boolean isValied(String emailId) {
+		String regex = "[a-z]{3,}[-.+]{0,1}[10]{0,3}[@]{1}[10]{0,3}[a-z]{0,5}[.]{0,1}[a-z]{0,3}[,.]{0,1}[a-z]{0,3}";
+		Pattern pattern = Pattern .compile(regex);
+		Matcher matcher = pattern.matcher(emailId);
+		return matcher.matches();
+	
+	}	
 	
 }
