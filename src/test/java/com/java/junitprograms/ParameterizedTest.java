@@ -39,14 +39,6 @@ public class ParameterizedTest {
 		assertEquals(true, Object.isValied(emailId));
 	}
 
-	@Parameterized.Parameters
-	public void EmailTest(String EmailTest) {
-		UserRegistration Object = new UserRegistration();
-		String[] emailId = { "abc@yahoo.com", "abc-100@yahoo.com", "abc.100@yahoo.com", "abc111@abc.com",
-				"abc-100@abc.net", "abc.100@abc.com.au", "abc@1.com", "abc@gmail.com.com", "abc+100@gmail.com" };
-		for (int i = 0; i < emailId.length; i++) {
-			assertTrue(Object.isValied(emailId[i]));
-		}
-	}
+
 
 }
